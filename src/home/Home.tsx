@@ -43,7 +43,7 @@ function Home() {
                     <input type="name" placeholder='Enter Name:' {...register('name')}/>
                     <input type="email" placeholder='Enter Email:' {...register('email')}/>
                     <button disabled={isLoading}>{isLoading ? 'Loading...' : 'I Want A GTA!'}</button>
-                </>
+            </>
             )}
         </form>
       </div>
