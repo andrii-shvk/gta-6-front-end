@@ -1,0 +1,72 @@
+.block {
+    @apply w-max p-3 absolute right-5 top-5;
+    animation: slideIn 2s ease-in-out;
+}
+
+.btn {
+    @apply text-lg font-medium uppercase py-2 px-4 border border-white inline-block mt-2 bg-transparent;
+    transition: box-shadow 0.4s linear, background-color 0.4s linear;
+}
+
+.btn:active,
+.btn:hover {
+    @apply bg-white/20;
+}
+
+.embla {
+    @apply overflow-hidden overflow-y-auto py-1.5 px-3 mt-4 w-full border border-transparent bg-black/30 placeholder:text-white/60 outline-none flex flex-col;
+    animation: slideIn 2s ease-in-out;
+}
+
+.embla__hide {
+    animation: slideOut 2s ease-in-out forwards;
+}
+
+.embla__slide {
+    @apply flex flex-col pb-5 box-border;
+}
+
+.users__block {
+    @apply h-[550px];
+    transition: border-color 0.4s linear, background-color 0.3s linear;
+}
+
+.users__block > li {
+    @apply gap-2 flex;
+}
+
+.form__block {
+    @apply flex flex-col gap-1;
+}
+
+.form__input {
+    @apply py-1.5 px-3 mb-2 w-full border border-transparent bg-black/30 placeholder:text-white/60 outline-none;
+    transition: border-color 0.4s linear, background-color 0.3s linear;
+}
+
+.form__input:focus {
+    @apply border-[#ffb3c0];
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(110%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(110%);
+        opacity: 0;
+    }
+}
