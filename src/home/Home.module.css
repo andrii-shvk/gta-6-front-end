@@ -16,8 +16,12 @@
   transition: border-color 0.4s linear, background-color 0.3s linear;
 }
 
+.wrapper > form > p {
+  @apply text-red-600 font-semibold;
+}
+
 .wrapper > form > input:focus {
-  @apply border-[#ffb3c0]
+  @apply border-[#ffb3c0];
 }
 
 .wrapper > form > button {
